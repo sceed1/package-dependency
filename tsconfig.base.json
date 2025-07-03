@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@bundler-dependency-test/my-external": ["libs/my-external/src/index.ts"],
+      "@bundler-dependency-test/my-internal": [
+        "libs/shared/my-internal/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
