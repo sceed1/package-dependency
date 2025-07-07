@@ -1,23 +1,16 @@
 {
-  "name": "my-external",
+  "name": "my-other-lib",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/my-external/src",
+  "sourceRoot": "libs/my-other-lib/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": [],
   "targets": {
-    "build": {
-      "executor": "@nx/angular:package",
-      "options": {
-        "project": "libs/my-external",
-        "tsConfig": "./tsconfig.lib.json",
-      }
-    },
     "test": {
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../../coverage/libs/my-external"
+        "reportsDirectory": "../../coverage/libs/my-other-lib"
       }
     },
     "lint": {

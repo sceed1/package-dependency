@@ -2,21 +2,21 @@
   "name": "my-external",
   "version": "1.0.2",
   "description": "My awesome library",
-  "main": "./index.js",
+  "main": "./index.ts",
   "module": "./index.mjs",
   "types": "./index.d.ts",
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./index.mjs",
-      "require": "./index.js",
-      "types": "./index.d.ts"
+      "require": "./index.ts"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "peerDependencies": {
-    "@angular/core": "^17.0.0"
+    "@angular/core": "^20.0.0"
   },
   "publishConfig": {
     "access": "public"

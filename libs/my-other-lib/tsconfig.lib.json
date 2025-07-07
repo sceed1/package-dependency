@@ -3,9 +3,8 @@
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
     "declaration": true,
-    "declarationDir": "./dist/libs/my-lib",
+    "declarationMap": true,
     "inlineSources": true,
-    "emitDeclarationOnly": false,
     "types": []
   },
   "exclude": [

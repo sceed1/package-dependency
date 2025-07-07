@@ -31,6 +31,11 @@
     "@nx/vite:test": {
       "cache": true,
       "inputs": ["default", "^production"]
+    },
+    "@nx/angular:package": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   },
   "generators": {
@@ -46,6 +51,15 @@
     },
     "@nx/angular:component": {
       "style": "css"
+    }
+  },
+  "release": {
+    "changelog": {
+      "automaticFromRef": true
+    },
+    "projects": ["my-external", "my-other-external"],
+    "version": {
+      "preVersionCommand": "nx run-many -t build"
     }
   }
 }

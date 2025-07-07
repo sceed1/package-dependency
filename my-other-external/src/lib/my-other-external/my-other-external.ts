@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 import { MyInternal } from '@bundler-dependency-test/my-internal';
 
 @Component({
-  selector: 'lib-my-external',
+  selector: 'lib-my-other-external',
   imports: [CommonModule, MyInternal],
-  templateUrl: './my-external.html',
-  styleUrl: './my-external.css',
-  standalone: true
+  templateUrl: './my-other-external.html',
+  styleUrl: './my-other-external.css',
 })
-export class MyExternal {}
+export class MyOtherExternal {}
