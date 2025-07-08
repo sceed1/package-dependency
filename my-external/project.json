@@ -1,7 +1,7 @@
 {
-  "name": "my-other-external",
+  "name": "my-external",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "my-other-external/src",
+  "sourceRoot": "my-external/src",
   "prefix": "lib",
   "projectType": "library",
   "release": {
@@ -17,14 +17,14 @@
       "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "my-other-external/ng-package.json"
+        "project": "my-external/ng-package.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "my-other-external/tsconfig.lib.prod.json"
+          "tsConfig": "my-external/tsconfig.lib.prod.json"
         },
         "development": {
-          "tsConfig": "my-other-external/tsconfig.lib.json"
+          "tsConfig": "my-external/tsconfig.lib.json"
         }
       },
       "defaultConfiguration": "production"
@@ -33,7 +33,7 @@
       "executor": "@angular-devkit/build-angular:ng-packagr",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
-        "project": "my-other-external/ng-package.json"
+        "project": "my-external/ng-package.json"
       },
     },
     "nx-release-publish": {
@@ -45,7 +45,7 @@
       "executor": "@nx/vite:test",
       "outputs": ["{options.reportsDirectory}"],
       "options": {
-        "reportsDirectory": "../coverage/my-other-external"
+        "reportsDirectory": "../coverage/my-external"
       }
     },
     "lint": {

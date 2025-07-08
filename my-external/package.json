@@ -1,5 +1,5 @@
 {
-  "name": "@bundler-dependency-test/my-other-external",
+  "name": "@bundler-dependency-test/my-external",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^20.0.0",

@@ -7,6 +7,5 @@ import { MyInternal } from '@bundler-dependency-test/my-internal';
   imports: [CommonModule, MyInternal],
   templateUrl: './my-external.html',
   styleUrl: './my-external.css',
-  standalone: true
 })
 export class MyExternal {}
