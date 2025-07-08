@@ -15,16 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@bundler-dependency-test/my-external": ["libs/my-external/src/index.ts"],
-      "@bundler-dependency-test/my-internal": [
-        "libs/shared/my-internal/src/index.ts"
-      ],
-      "@bundler-dependency-test/my-other-external": [
-        "my-other-external/src/index.ts"
-      ],
-      "@bundler-dependency-test/my-other-lib": [
-        "libs/my-other-lib/src/index.ts"
-      ]
+      "@bundler-dependency-test/my-external": ["my-external/src/index.ts"],
+      "@bundler-dependency-test/my-internal": ["my-internal/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
