@@ -20,7 +20,7 @@
           "tsConfig": "my-external/tsconfig.lib.json"
         }
       },
-      "defaultConfiguration": "production"
+      "defaultConfiguration": "development"
     },
     "test": {
       "executor": "@nx/vite:test",
